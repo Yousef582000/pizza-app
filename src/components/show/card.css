@@ -1,0 +1,97 @@
+:root{
+    --main-bg-color: #151515;
+    --main-font-color: #ff8c42;
+    --second-font-color: #fff;
+    background-color: var(--second-font-color);
+}
+
+.dark-mode {
+    --main-bg-color: #151515;
+    --main-font-color: #ff8c42;
+    --second-font-color: #fff;
+  }
+  
+  .white-mode {
+    --main-bg-color: #fff;
+    --main-font-color: #ff5b00;
+    --second-font-color: #7b3000;
+  }
+  .dark-cart-parent{
+    width: 100%;
+    height: 80vh;
+    background-color: #000;
+   }
+
+.card{
+    position: relative;
+    top: 20px;
+    width: 70%;
+    margin: 100px auto;
+    margin-bottom: 50px;
+    background-color: var(--main-bg-color);
+  border-radius: 25px;
+  color: var(--second-font-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px 0 35px;
+}
+
+.dark-mode.card{
+    background-color:rgba(47, 47, 47, 1);
+    margin: auto;
+    top: 70px;
+}
+.card .text h1.Title{
+    font-size: 3.4rem;
+  position: relative;
+  top: 0;
+    color: var(--second-font-color);
+  font-family: Roboto;
+    text-transform: capitalize;
+}
+.card .text h1 span{
+    color: var(--main-font-color);
+}
+.card .text p{
+    font-size: 1.1rem;
+    width: 350px;
+    text-transform: capitalize;
+    color: var(--second-font-color);
+    margin-block: 15px;
+}
+.card .text button{
+    padding: 15px 40px;
+    background-color: var(--main-font-color);
+    color: var(--second-font-color);
+    font-size: 1.4rem;
+    border: none;
+    margin-top: 15px;
+    margin-left: 25px;
+    border-radius: 25px;
+}
+.card img{
+    margin-top: -12px;
+    border-radius: 25px;
+}
+@media screen and (max-width:756px) {
+    .card{
+        flex-direction: column;
+        width: 99%;
+        height: auto;
+        margin-top: 150px;
+        padding-right: 20px;
+    }
+.card .text h1{
+    font-size: 1.5rem;
+}
+.card .text p{
+    font-size: 14px;
+    text-align: start;
+    padding-right: 15px;
+    margin-right: 10px;
+}
+.card img{
+    display: none;
+}
+    
+}

@@ -1,0 +1,191 @@
+:root{
+    --main-bg-color: #151515;
+    --main-font-color: #ff8c42;
+    --second-font-color: #fff;
+    /* background-color: var(--main-bg-color); */
+  }
+  
+.fourth-section {
+  background-color: var(--second-font-color);
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+    position: relative;
+    font-family: "Quicksand", sans-serif;
+    margin-top: -100px;
+  }
+  .dark-mode{
+    background-color: var(--main-bg-color);
+  }
+  
+  .fourth-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.375rem;
+    border-radius: 10px;
+    border-width: 3px, 1px, 1px, 3px;
+    border-style: solid;
+    border-color: var(--main-bg-color);
+    width: 550px;
+    height: 56rem;
+    z-index: 3;
+    color: var(--main-bg-color);
+    backdrop-filter: blur(5px);
+  }
+  .dark-mode form {
+    border-color: var(--second-font-color);
+    color: var(--second-font-color);
+  }
+  .fourth-section h3 {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3.125rem;
+  }  
+  .fourth-section p {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.09375rem;
+    margin-bottom: 12.5rem;
+  }
+  
+  
+  .fourth-section .form-control {
+    width: 100%;
+    display: flex;
+    padding: 0 2.3rem;
+   
+    margin:  10px  40px;
+
+  }
+  .fourth-section .form-control label {
+    font-weight: 600;
+    font-size: 1.3125rem;
+ 
+  }
+  .dark-mode .form-control label{
+    color: var(--second-font-color);
+  }
+  .fourth-section .form-control input {
+    flex-grow: 1;
+    border: none;
+    margin-left: 20px;
+    padding:15px 28px;
+    background-color:rgb(163, 160, 160);
+    border-radius: 5px;  
+    color: white;
+  }
+  .fourth-section .form-control input::placeholder{
+    color: var(--main-bg-color);
+    text-transform: capitalize;
+    font-size: 18px;
+  }
+  .dark-mode .form-control input{
+    color: var(--second-font-color);
+  }
+  .dark-mode.fourth-section .form-control input::placeholder{
+    color: #fff;
+  }
+  
+  .white-mode .fourth-section .form-control input {
+    border-bottom: 3px dashed black;
+    color: black;
+  }
+  
+  .fourth-section .form-control input:focus {
+    outline: none;
+  }
+  
+  .fourth-section .btn {
+    margin-top: 4.75rem;
+text-transform: capitalize;
+position: relative;
+left: -40px;
+top: -120px;
+  }
+  .white-mode .fourth-section .btn {
+    color: black;
+  }
+  
+  .fourth-section img {
+    position: absolute;
+  }
+  .fourth-section .bg1 {
+    left: 35%;
+    top:80px;
+    width: 
+    451px;
+    height: 
+    482px;
+
+  }
+  .fourth-section .bg2 {
+
+ width: 471px;
+ height: 778px;
+ left: -10px;
+ top: 20.9px;
+  }
+  .fourth-section .bg3 {
+    right:2rem;
+    top: 75%;
+    width: 340.03px;
+    height: 250.68px;
+    transform: rotate(10.56deg);
+  }
+
+  .fourth-section .bg4 {
+    width: 451px;
+    height: 482px;
+    top: 450px;
+   left: 427px;
+    /* transform: rotate(20.56deg); */
+  
+  }
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width:991px) {
+    .fourth-section img {
+        display: none;
+                width: 300px;
+                height: 300px;
+      }
+      .fourth-section .bg2 {
+        display: block;
+      }
+      .fourth-section form{
+        margin: auto;
+        width: 100%;
+        height: 47rem;
+        padding: .5rem;
+        font-size: 19px;
+        margin-bottom: 0;
+      }
+      .fourth-section .form-control input {
+        padding: 10px 30px;
+        color: var(--main-bg-color);
+        font-size: 19px;
+      }
+      .fourth-section .form-control label{
+        font-size: 1rem;
+      }
+    .form-control{
+        flex-direction: column;
+    }
+    .btn{
+        position: absolute;
+        top: 65%;
+        left: 60px;
+    }
+    .fourth-section p {
+        margin-bottom: 1rem;
+    }
+  }
